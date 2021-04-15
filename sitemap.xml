@@ -1,67 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <url>
-    <loc>https://dpak-creator.github.io/archives/index.html</loc>
+  <sitemap>
+    <loc>https://example.com/en/sitemap.xml</loc>
     
-    <lastmod>2020-11-26T17:24:15.554Z</lastmod>
+      <lastmod>2020-11-01T17:55:28+08:00</lastmod>
     
-  </url>
+  </sitemap>
   
-  <url>
-    <loc>https://dpak-creator.github.io/contact/index.html</loc>
+  <sitemap>
+    <loc>https://example.com/zh-cn/sitemap.xml</loc>
     
-    <lastmod>2020-11-26T17:24:15.554Z</lastmod>
+      <lastmod>2019-10-01T17:55:28+08:00</lastmod>
     
-  </url>
+  </sitemap>
   
-  <url>
-    <loc>https://dpak-creator.github.io/about/index.html</loc>
+  <sitemap>
+    <loc>https://example.com/fr/sitemap.xml</loc>
     
-    <lastmod>2020-11-26T17:24:15.554Z</lastmod>
+      <lastmod>2019-10-01T17:55:28+08:00</lastmod>
     
-  </url>
+  </sitemap>
   
-  <url>
-    <loc>https://dpak-creator.github.io/categories/index.html</loc>
-    
-    <lastmod>2020-11-26T17:24:15.554Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dpak-creator.github.io/friends/index.html</loc>
-    
-    <lastmod>2020-11-26T17:24:15.554Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dpak-creator.github.io/tags/index.html</loc>
-    
-    <lastmod>2020-11-26T17:24:15.554Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dpak-creator.github.io/2019/08/15/software-commands/</loc>
-    
-    <lastmod>2020-11-26T17:24:15.550Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dpak-creator.github.io/404.html</loc>
-    
-    <lastmod>2020-11-26T17:24:15.550Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dpak-creator.github.io/AV/index.html</loc>
-    
-    <lastmod>2020-11-26T17:24:15.550Z</lastmod>
-    
-  </url>
-  
-</urlset>
+</sitemapindex>
