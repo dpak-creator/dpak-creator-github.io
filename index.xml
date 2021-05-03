@@ -3,9 +3,19 @@
         <title>gr4n173</title>
         <link>https://example.com/</link>
         <description>About my works and personal blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 01 Nov 2020 17:55:28 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 May 2021 17:55:28 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Linux Privelege Escalation</title>
+    <link>https://example.com/linuxprivsec/</link>
+    <pubDate>Sun, 02 May 2021 17:55:28 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://example.com/linuxprivsec/</guid>
+    <description><![CDATA[Links: https://medium.com/malware-buddy/security-infographics-9c4d3bd891ef#18dd https://github.com/sagishahar/lpeworkshop
+1. Service Exploits mysql Using the exploit from exploit db to get the rootshell. Since mysql is run by root without password where we can create the tables and run the command using function.
+2. Week file permission Readable #/etc/shadow Here I will be exploiting the shadow file which have read permission. At first I have check the permission of shadow file.
+1 2  root@gr4n173:~$ ls -al /etc/shadow -rw-r--rw- 1 root shadow 845 May 2 03:41 /etc/shadow   There you can see the rw permission to others.]]></description>
+</item><item>
     <title>Moee-1</title>
     <link>https://example.com/moee-1/</link>
     <pubDate>Sun, 01 Nov 2020 17:55:28 &#43;0800</pubDate>
