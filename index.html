@@ -123,9 +123,7 @@
         </div><h1 class="single-title" itemprop="name headline">
         <a href="/linuxprivsec/">Linux Privelege Escalation</a>
     </h1><div class="post-meta"><span class="post-author"><a href="https://twitter.com/gr4n173" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>gr4n173</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-02">2021-05-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/oscp/"><i class="far fa-folder fa-fw"></i>OSCP Prepration</a></span></div><div class="content">Links: https://medium.com/malware-buddy/security-infographics-9c4d3bd891ef#18dd https://github.com/sagishahar/lpeworkshop
-1. Service Exploits mysql Using the exploit from exploit db to get the rootshell. Since mysql is run by root without password where we can create the tables and run the command using function.
-2. Week file permission Readable #/etc/shadow Here I will be exploiting the shadow file which have read permission. At first I have check the permission of shadow file.
-1 2  root@gr4n173:~$ ls -al /etc/shadow -rw-r--rw- 1 root shadow 845 May 2 03:41 /etc/shadow   There you can see the rw permission to others.</div><div class="post-footer">
+1. Service Exploits mysql Using the exploit from exploit db to get the rootshell. Since mysql is run by root without password where we can create the tables and run the command using function. The MySQL service is running as root and the &ldquo;root&rdquo; user for the service does not have a password assigned. We can use a popular exploit that takes advantage of User Defined Functions (UDFs) to run system commands as root via the MySQL service.</div><div class="post-footer">
         <a href="/linuxprivsec/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">linux</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">

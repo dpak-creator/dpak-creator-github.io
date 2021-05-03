@@ -10,9 +10,7 @@
     <author>Author</author>
     <guid>https://example.com/linuxprivsec/</guid>
     <description><![CDATA[Links: https://medium.com/malware-buddy/security-infographics-9c4d3bd891ef#18dd https://github.com/sagishahar/lpeworkshop
-1. Service Exploits mysql Using the exploit from exploit db to get the rootshell. Since mysql is run by root without password where we can create the tables and run the command using function.
-2. Week file permission Readable #/etc/shadow Here I will be exploiting the shadow file which have read permission. At first I have check the permission of shadow file.
-1 2  root@gr4n173:~$ ls -al /etc/shadow -rw-r--rw- 1 root shadow 845 May 2 03:41 /etc/shadow   There you can see the rw permission to others.]]></description>
+1. Service Exploits mysql Using the exploit from exploit db to get the rootshell. Since mysql is run by root without password where we can create the tables and run the command using function. The MySQL service is running as root and the &ldquo;root&rdquo; user for the service does not have a password assigned. We can use a popular exploit that takes advantage of User Defined Functions (UDFs) to run system commands as root via the MySQL service.]]></description>
 </item><item>
     <title>Moee-1</title>
     <link>https://example.com/moee-1/</link>
