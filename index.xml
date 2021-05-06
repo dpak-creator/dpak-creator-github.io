@@ -3,16 +3,22 @@
         <title>gr4n173</title>
         <link>https://example.com/</link>
         <description>About my works and personal blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 May 2021 17:55:28 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 May 2021 17:55:28 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Linux Privelege Escalation</title>
+    <title>Windows Privilege Escalation Guide</title>
+    <link>https://example.com/windowsprivsec/</link>
+    <pubDate>Mon, 03 May 2021 17:55:28 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://example.com/windowsprivsec/</guid>
+    <description><![CDATA[<p>Let&rsquo;s make hands dry in Windows Privilege Escalation.</p>]]></description>
+</item><item>
+    <title>Linux Privilege Escalation Guide</title>
     <link>https://example.com/linuxprivsec/</link>
     <pubDate>Sun, 02 May 2021 17:55:28 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://example.com/linuxprivsec/</guid>
-    <description><![CDATA[Links: https://medium.com/malware-buddy/security-infographics-9c4d3bd891ef#18dd https://github.com/sagishahar/lpeworkshop
-1. Service Exploits mysql Using the exploit from exploit db to get the rootshell. Since mysql is run by root without password where we can create the tables and run the command using function. The MySQL service is running as root and the &ldquo;root&rdquo; user for the service does not have a password assigned. We can use a popular exploit that takes advantage of User Defined Functions (UDFs) to run system commands as root via the MySQL service.]]></description>
+    <description><![CDATA[<p>Lets talk about the ways to linux privilege escalate from non-user by exploit executables.</p>]]></description>
 </item><item>
     <title>Moee-1</title>
     <link>https://example.com/moee-1/</link>
