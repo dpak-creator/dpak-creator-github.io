@@ -1,5 +1,8 @@
-# Linux Privelege Escalation
+# Linux Privilege Escalation Guide
 
+Lets talk about the ways to linux privilege escalate from non-user by exploit executables.
+
+<!--more-->
 
 Links:
 https://medium.com/malware-buddy/security-infographics-9c4d3bd891ef#18dd
