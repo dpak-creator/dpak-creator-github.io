@@ -11,14 +11,10 @@
   <sitemap>
     <loc>https://example.com/zh-cn/sitemap.xml</loc>
     
-      <lastmod>2019-10-01T17:55:28+08:00</lastmod>
-    
   </sitemap>
   
   <sitemap>
     <loc>https://example.com/fr/sitemap.xml</loc>
-    
-      <lastmod>2019-10-01T17:55:28+08:00</lastmod>
     
   </sitemap>
   
