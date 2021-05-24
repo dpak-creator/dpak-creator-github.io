@@ -1,9 +1,9 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/home/gr4n173/mystuff/tet/LoveIt/exampleSite",
+	"sourceRoot": "/home/gr4n173/mystuff/LoveIt/gr4n173.github.io",
 	"sources": [
-		"/home/gr4n173/mystuff/tet/LoveIt/assets/css/style.scss",
+		"/home/gr4n173/mystuff/LoveIt/assets/css/style.scss",
 		"../assets/css/_variables.scss",
 		"assets/css/_override.scss",
 		"../assets/css/_mixin/_index.scss",
