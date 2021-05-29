@@ -1,42 +1,42 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - gr4n173</title>
-        <link>https://example.com/posts/</link>
+        <link>http://example.com/posts/</link>
         <description>All Posts | gr4n173</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 May 2021 17:55:28 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 May 2021 17:55:28 &#43;0800</lastBuildDate><atom:link href="http://example.com/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Windows Privilege Escalation Guide</title>
-    <link>https://example.com/windowsprivsec/</link>
+    <link>http://example.com/windowsprivsec/</link>
     <pubDate>Mon, 03 May 2021 17:55:28 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://example.com/windowsprivsec/</guid>
+    <guid>http://example.com/windowsprivsec/</guid>
     <description><![CDATA[<p>Let&rsquo;s make hands dry in Windows Privilege Escalation.</p>]]></description>
 </item><item>
     <title>Linux Privilege Escalation Guide</title>
-    <link>https://example.com/linuxprivsec/</link>
+    <link>http://example.com/linuxprivsec/</link>
     <pubDate>Sun, 02 May 2021 17:55:28 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://example.com/linuxprivsec/</guid>
+    <guid>http://example.com/linuxprivsec/</guid>
     <description><![CDATA[<p>Lets talk about the ways to linux privilege escalate from non-user by exploit executables.</p>]]></description>
 </item><item>
     <title>Moee-1</title>
-    <link>https://example.com/moee-1/</link>
+    <link>http://example.com/moee-1/</link>
     <pubDate>Sun, 01 Nov 2020 17:55:28 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://example.com/moee-1/</guid>
+    <guid>http://example.com/moee-1/</guid>
     <description><![CDATA[<p>Details about the first part of <code>Moee</code> Series.</p>]]></description>
 </item><item>
     <title>Hack The Box: Registry</title>
-    <link>https://example.com/registery/</link>
+    <link>http://example.com/registery/</link>
     <pubDate>Sat, 04 Apr 2020 17:55:28 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://example.com/registery/</guid>
+    <guid>http://example.com/registery/</guid>
     <description><![CDATA[<p><code>Registry</code> box was the hard box. It falls under linux and hard category.Especially to read the root flag was a quite tough one. I’ll approach this write-up how I solved it, along with the problems that I had to face during this box.</p>]]></description>
 </item><item>
     <title>Emoji Support</title>
-    <link>https://example.com/emoji-support/</link>
+    <link>http://example.com/emoji-support/</link>
     <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://example.com/emoji-support/</guid>
+    <guid>http://example.com/emoji-support/</guid>
     <description><![CDATA[<p>Emoji can be enabled in a Hugo project in a number of ways.</p>]]></description>
 </item></channel>
 </rss>

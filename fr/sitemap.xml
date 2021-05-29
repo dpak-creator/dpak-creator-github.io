@@ -2,116 +2,116 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://example.com/fr/emoji-support/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://example.com/fr/emoji-support/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://example.com/emoji-support/"
+                        href="http://example.com/emoji-support/"
                         /><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://example.com/zh-cn/emoji-support/"
+                        href="http://example.com/zh-cn/emoji-support/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="fr"
-                    href="https://example.com/fr/emoji-support/"
+                    href="http://example.com/fr/emoji-support/"
                     /></url><url>
-            <loc>https://example.com/fr/categories/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://example.com/fr/categories/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://example.com/categories/"
+                        href="http://example.com/categories/"
                         /><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://example.com/zh-cn/categories/"
+                        href="http://example.com/zh-cn/categories/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="fr"
-                    href="https://example.com/fr/categories/"
+                    href="http://example.com/fr/categories/"
                     /></url><url>
-            <loc>https://example.com/fr/tags/emoji/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://example.com/fr/tags/emoji/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://example.com/tags/emoji/"
+                        href="http://example.com/tags/emoji/"
                         /><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://example.com/zh-cn/tags/emoji/"
+                        href="http://example.com/zh-cn/tags/emoji/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="fr"
-                    href="https://example.com/fr/tags/emoji/"
+                    href="http://example.com/fr/tags/emoji/"
                     /></url><url>
-            <loc>https://example.com/fr/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://example.com/fr/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://example.com/"
+                        href="http://example.com/"
                         /><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://example.com/zh-cn/"
+                        href="http://example.com/zh-cn/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="fr"
-                    href="https://example.com/fr/"
+                    href="http://example.com/fr/"
                     /></url><url>
-            <loc>https://example.com/fr/categories/markdown/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://example.com/fr/categories/markdown/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://example.com/categories/markdown/"
+                        href="http://example.com/categories/markdown/"
                         /><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://example.com/zh-cn/categories/markdown/"
+                        href="http://example.com/zh-cn/categories/markdown/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="fr"
-                    href="https://example.com/fr/categories/markdown/"
+                    href="http://example.com/fr/categories/markdown/"
                     /></url><url>
-            <loc>https://example.com/fr/posts/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://example.com/fr/posts/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://example.com/posts/"
+                        href="http://example.com/posts/"
                         /><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://example.com/zh-cn/posts/"
+                        href="http://example.com/zh-cn/posts/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="fr"
-                    href="https://example.com/fr/posts/"
+                    href="http://example.com/fr/posts/"
                     /></url><url>
-            <loc>https://example.com/fr/tags/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://example.com/fr/tags/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://example.com/tags/"
+                        href="http://example.com/tags/"
                         /><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://example.com/zh-cn/tags/"
+                        href="http://example.com/zh-cn/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="fr"
-                    href="https://example.com/fr/tags/"
+                    href="http://example.com/fr/tags/"
                     /></url><url>
-            <loc>https://example.com/fr/tags/content/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://example.com/fr/tags/content/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://example.com/zh-cn/tags/content/"
+                        href="http://example.com/zh-cn/tags/content/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="fr"
-                    href="https://example.com/fr/tags/content/"
+                    href="http://example.com/fr/tags/content/"
                     /></url><url>
-            <loc>https://example.com/fr/categories/documentation/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://example.com/fr/categories/documentation/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://example.com/categories/documentation/"
+                        href="http://example.com/categories/documentation/"
                         /><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://example.com/zh-cn/categories/documentation/"
+                        href="http://example.com/zh-cn/categories/documentation/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="fr"
-                    href="https://example.com/fr/categories/documentation/"
+                    href="http://example.com/fr/categories/documentation/"
                     /></url></urlset>
